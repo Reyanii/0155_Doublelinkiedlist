@@ -179,5 +179,23 @@ class DoubleLinledList
         }
     }
 
-    void 
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *currnet = START;
+
+        // step 1 Traverse to find matcing roll number
+        while (currnet != NULL && currnet->noMhs != rollNo)
+        currnet = currnet->next;
+
+        //step 2 output result
+    }
 }
