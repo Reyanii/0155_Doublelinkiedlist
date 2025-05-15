@@ -8,4 +8,10 @@ public:
     int noMhs;
     Node *next;
     Node *prev;
+};
+
+class DoubleLinledList
+{
+    private:
+    
 }
