@@ -14,6 +14,7 @@ class DoubleLinledList
 {
     private:
     Node *START;
+
     public:
     DoubleLinledList()
     {
@@ -46,7 +47,26 @@ class DoubleLinledList
 
             // step 5 START.prev = newNode (if START existan)
             if (START != NULL)
-            START->prev = newNode
+            START->prev = newNode;
+
+            // Step 6 newNode.prev = NULL
+            newNode->prev = NULL;
+
+            //Step 7 START = newNode
+            START = newNode;
+            return;
         }
+
+        // insert in between node
+        // step 8 Locate posotion for insertion
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
+        {
+            current = current->next;
+        }
+
+        if (current->next != NULL)
+            
+
     }
 }
