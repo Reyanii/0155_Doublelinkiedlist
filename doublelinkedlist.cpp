@@ -105,5 +105,17 @@ class DoubleLinledList
             cout << "Record not found" << endl;
             return;
         }
+
+        // step 2 if node is at the beginning
+        if (current == START)
+        {
+            START = current->next;
+            if (START != NULL)
+                START->prev =NULL;
+        }
+        else
+        {
+            
+        }
     }
 }
