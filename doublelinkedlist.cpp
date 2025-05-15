@@ -65,8 +65,20 @@ class DoubleLinledList
             current = current->next;
         }
 
-        if (current->next != NULL)
-            
+        if (current->next != NULL && nim == current->next->noMhs)
+        {
+            cout << "\nDuplicate roll numbers not allowed" << endl;
+            return;
+        }
 
+        // Step 9 Insert between current and current->
+        newNode->next = current->next;
+        newNode->prev = current;
+
+        //insert last node
+        if (current->next != NULL)
+            current->next->prev = newNode;
+
+     current->next = newNode;
     }
 }
