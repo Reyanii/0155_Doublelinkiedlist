@@ -129,4 +129,15 @@ class DoubleLinledList
     }
 
     void traverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        //step 1 mark first node as currentNode
+        Node *CurrentNode = START;
+        
+    }
 }
