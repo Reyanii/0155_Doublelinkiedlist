@@ -13,5 +13,33 @@ public:
 class DoubleLinledList
 {
     private:
-    
+    Node *START;
+    public:
+    DoubleLinledList()
+    {
+        START = NULL;
+    }
+
+    void addNode()
+    {
+        int nim;
+        string nim;
+        cout << "\nEnter the roll number of the student: ";
+        cin >> nim;
+
+        // step 1 allpcate memory foor new node
+        Node *newNode = new Node();
+
+        // step 2 assing value to the data fields
+        newNode->noMhs = nim;
+
+        // step 3 insert at beginning if list is empty or nim is smallest
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDuplicate number"
+            }
+        }
+    }
 }
