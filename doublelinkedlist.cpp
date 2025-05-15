@@ -138,6 +138,37 @@ class DoubleLinledList
 
         //step 1 mark first node as currentNode
         Node *CurrentNode = START;
-        
+        // step 2 reapeat until currentNode == NULL
+        cout << "\nRecprds in ascending order of roll numjber are:\n";
+        int i = 0;
+        while (CurrentNode != NULL)
+        {
+            cout << i + 1 << ". " << CurrentNode->noMhs << " " << endl;
+            // step 3 move to next node
+            CurrentNode = CurrentNode->next;
+            i++;
+        }
     }
+
+    void revtraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        //step 1 move to last node
+        Node *currentNode = START;
+        int i = 0;
+        while (currentNode->next != NULL)
+        {
+            currentNode = currentNode->next;
+            i++;
+        }
+
+        // step 2 Traverse backward
+        cout << "\nRecords in"
+    }
+
 }
