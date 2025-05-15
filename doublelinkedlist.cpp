@@ -38,8 +38,15 @@ class DoubleLinledList
         {
             if (START != NULL && nim == START->noMhs)
             {
-                cout << "\nDuplicate number"
+                cout << "\nDuplicate number not allowed" << endl;
+                return;
             }
+            //STEP 4 new node.next = START
+            newNode->next = START;
+
+            // step 5 START.prev = newNode (if START existan)
+            if (START != NULL)
+            START->prev = newNode
         }
     }
 }
