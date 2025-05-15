@@ -123,6 +123,10 @@ class DoubleLinledList
                 current->next->prev = current->prev;
         }
 
-        
+        // step 5
+        delete current;
+        cout << "Record with roll number " << rollNo << "deleted" << endl;
     }
+
+    void traverse()
 }
